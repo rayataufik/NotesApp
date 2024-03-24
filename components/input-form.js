@@ -1,4 +1,3 @@
-// input-form.js
 export class InputForm extends HTMLElement {
     constructor() {
         super();
@@ -87,6 +86,9 @@ export class InputForm extends HTMLElement {
                 };
                 const event = new CustomEvent('noteAdded', { detail: newNote });
                 this.dispatchEvent(event);
+                titleInput.value = '';
+                bodyInput.value = '';
+                alert('Note berhasil ditambahkan.');
             } else {
                 alert('Silakan isi semua kolom.');
             }
