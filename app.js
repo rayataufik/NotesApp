@@ -1,6 +1,8 @@
+import './components/app-bar.js';
 import { NoteCard } from './components/note-card.js';
 import { InputForm } from './components/input-form.js';
 import notesData from './notes.js';
+
 
 const app = document.getElementById('app');
 
